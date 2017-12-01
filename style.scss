@@ -2,6 +2,14 @@ img {
     width: 100%;
 }
 
+h2 {
+    margin: 3vh 0;
+}
+
+h4 {
+    margin: 2vh 0;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -11,8 +19,13 @@ img {
     }
 }
 
-.content {
-    padding: 10vh;
+.card {
+    padding: 3vh;
+}
+
+.container,
+.container-full {
+    padding: 5vh;
     box-sizing: border-box;
     display: flex;
 }
@@ -36,14 +49,24 @@ img {
     }
 }
 
-@media (max-width:991px) {
-    .content {
-        flex-direction: column;
-        padding: 10vh 0;
-        img {
-            padding-bottom: 5vh;
+#offer {
+    .container {
+        .content {
+            padding: 0;
+            flex-direction: column;
         }
     }
+}
+
+
+#about{
+    .col-lg-6{
+        display: flex;
+        align-items: center;
+       
+    }
+}
+@media (max-width:991px) {
     #stage {
         .content {
             h1 {
