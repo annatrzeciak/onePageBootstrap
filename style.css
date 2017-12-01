@@ -1,0 +1,41 @@
+img {
+  width: 100%; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+  .navbar img {
+    width: auto; }
+
+.content {
+  padding: 10vh;
+  box-sizing: border-box;
+  display: flex; }
+
+#stage {
+  height: 100vh;
+  background: url("img/stage.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #stage .container .content {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5vh;
+    text-align: center; }
+
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+    padding: 10vh 0; }
+    .content img {
+      padding-bottom: 5vh; }
+
+  #stage .content h1 {
+    font-size: 25px; } }
+
+/*# sourceMappingURL=style.css.map */
