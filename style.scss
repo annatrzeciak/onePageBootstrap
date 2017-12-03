@@ -117,7 +117,22 @@ h4 {
     }
 }
 
+#how-working {
+    .container {
+        background: #eae4e4;
+        .col-md-5 {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
 
+#contact {
+    img {
+        max-height: 32px;
+        object-fit: contain;
+    }
+}
 
 @media (max-width:991px) {
     #stage {

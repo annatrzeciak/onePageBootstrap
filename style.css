@@ -86,6 +86,16 @@ h4 {
         height: 100%;
         width: 100%; }
 
+#how-working .container {
+  background: #eae4e4; }
+  #how-working .container .col-md-5 {
+    display: flex;
+    align-items: center; }
+
+#contact img {
+  max-height: 32px;
+  object-fit: contain; }
+
 @media (max-width: 991px) {
   #stage .content h1 {
     font-size: 25px; } }
