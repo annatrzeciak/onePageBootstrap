@@ -66,15 +66,19 @@ h4 {
 }
 
 #team {
-    padding: 10vh 0;
+    padding: 10vh 2vh;
     .slider {
-        display: inline-block;
-        text-align: center;
+        position: relative;
         width: 100%;
         height: 50%;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        
         .card {
             padding: 0;
+            margin: 0 3vh;
             height: 100%;
             width: 33%;
         }
@@ -89,16 +93,17 @@ h4 {
                 padding: 1rem;
                 width: 100%;
                 flex-direction: column;
-                align-items: flex-end;
-                justify-content: flex-end;
-                h4 {
+                h5 {
                     margin: 0;
+                    text-align: center;
                 }
                 .card-text {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     margin-bottom: 1vh;
+                    font-size: 0.9rem;
+                    text-align: center;
                     a {
                         img {
                             height: 32px;
@@ -120,7 +125,7 @@ h4 {
 #how-working {
     .container {
         background: #eae4e4;
-        .col-md-5 {
+        .col-lg-5 {
             display: flex;
             align-items: center;
         }
@@ -133,7 +138,23 @@ h4 {
         object-fit: contain;
     }
 }
-
+#other-section{
+    margin: 10vh 0;
+    padding: 5vh;
+    background-image: url(img/office-1209640_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .col-md-8{
+        padding: 5vh;
+        background: rgba(0,0,0,0.6);
+        color:white;
+        h2{
+            margin-top: 0;
+        }
+    }
+}
 @media (max-width:991px) {
     #stage {
         .content {

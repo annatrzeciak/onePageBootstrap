@@ -1,9 +1,11 @@
 $(document).ready(function () {
     $('.slider').slick({
-        dots: true,
-        arrow: false,
+        dots: false,
+        arrow: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: '<i class="fa fa-chevron-right"></i>',
+        prevArrow: '<i class="fa fa-chevron-left"></i>',
         slidesToShow: 3,
         responsive: [
             {
