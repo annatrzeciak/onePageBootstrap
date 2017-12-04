@@ -3,13 +3,16 @@ img {
 }
 
 h2 {
-    margin: 3vh 0;
+    margin: 3% 0;
 }
 
 h4 {
-    margin: 2vh 0;
+    margin: 2% 0;
 }
-
+.center-align {
+        display: flex;
+        align-items: center;
+    }
 .navbar {
     position: fixed;
     width: 100%;
@@ -20,17 +23,17 @@ h4 {
 }
 
 .card {
-    padding: 3vh;
+    padding: 3%;
 }
 
-.container,
-.container-full {
-    padding: 5vh;
+
+.container-content {
+    padding: 5%;
     box-sizing: border-box;
     display: flex;
 }
 
-#stage {
+.main-panel {
     height: 100vh;
     background: url('img/stage.jpg');
     background-position: center;
@@ -43,7 +46,7 @@ h4 {
             display: block;
             background: rgba(0, 0, 0, 0.5);
             color: white;
-            padding: 5vh;
+            padding: 3%;
             text-align: center;
         }
     }
@@ -58,15 +61,12 @@ h4 {
     }
 }
 
-#about {
-    .col-lg-6 {
-        display: flex;
-        align-items: center;
-    }
-}
+
+    
+
 
 #team {
-    padding: 10vh 2vh;
+    padding: 5% 2%;
     .slider {
         position: relative;
         width: 100%;
@@ -78,19 +78,20 @@ h4 {
         
         .card {
             padding: 0;
-            margin: 0 3vh;
+            margin: 0 20px;
             height: 100%;
             width: 33%;
         }
         .item {
             float: right;
             .card-img-top {
-                height: 40vh;
+                height: 250px;
                 width: 100%;
+object-fit: cover;
             }
             .card-body {
                 color: white;
-                padding: 1rem;
+                padding: 5%;
                 width: 100%;
                 flex-direction: column;
                 h5 {
@@ -101,14 +102,14 @@ h4 {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    margin-bottom: 1vh;
+                    margin-bottom: 2%;
                     font-size: 0.9rem;
                     text-align: center;
                     a {
                         img {
                             height: 32px;
                             width: 32px;
-                            margin: 0 1vh;
+                            margin: 0 10px;
                         }
                     }
                 }
@@ -125,10 +126,7 @@ h4 {
 #how-working {
     .container {
         background: #eae4e4;
-        .col-lg-5 {
-            display: flex;
-            align-items: center;
-        }
+    
     }
 }
 
@@ -138,16 +136,16 @@ h4 {
         object-fit: contain;
     }
 }
-#other-section{
-    margin: 10vh 0;
-    padding: 5vh;
+.transparent-section{
+    margin: 10% 0;
+    padding: 5%;
     background-image: url(img/office-1209640_1920.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     .col-md-8{
-        padding: 5vh;
+        padding: 5%;
         background: rgba(0,0,0,0.6);
         color:white;
         h2{
